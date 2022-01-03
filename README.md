@@ -10,9 +10,9 @@
 |  ⬜️   | Remover Card                         |
 |  ⬜️   | Inserir label de prioridade no card  | -->
 
-| Checkbox Experiments | [ ] unchecked header | [x] checked header |
-| -------------------- | :------------------: | :----------------: |
-| checkbox             |       [ ] row        |      [x] row       |
+| Checkbox Experiments | - [ ] unchecked header | - [x] checked header |
+| -------------------- | :--------------------: | :------------------: |
+| checkbox             |       - [ ] row        |      - [x] row       |
 
 ### A ser implementado
 

@@ -3,14 +3,15 @@
 ### Features
 
 - [ ] Criar Card
-- [v] Arrastar Card para coluna específica
+- [x] Arrastar Card para coluna específica
 - [ ] Visualizar Card
 - [ ] Editar Card
 - [ ] Remover Card
-- [ ] Adicionar Label para Card
+- [ ] Adicionar Label para Card dinamicament
 
 ### A ser implementado
 
+- [ ] visualizar card
 - [ ] adicionar ícone de descricão
 - [ ] adicionar ícone de usuario caso usuário esteja associado ao card
 - [ ] adicionar ícone de comentário com contagem comentários
@@ -18,7 +19,6 @@
 - [ ] adicionar ícone de check com contagem de checklists
 - [ ] adicionar ícone de data com informação do mês e dia
   - os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card
-- [] visualizar card
 
 ### imagem
 

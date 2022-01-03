@@ -2,12 +2,17 @@
 
 ### Features
 
-- [ ] Criar Card
-- [x] Arrastar Card para coluna específica
-- [ ] Visualizar Card
-- [ ] Editar Card
-- [ ] Remover Card
-- [ ] Adicionar Label para Card dinamicament
+|     |                                      |
+| :-: | ------------------------------------ |
+| ⬜️ | Criar Card                           |
+| ✅  | Arrastar Card para coluna específica |
+| ⬜️ | Visualizar Card                      |
+| ⬜️ | Remover Card                         |
+| ⬜️ | Inserir label de prioridade no card  |
+
+| Checkbox Experiments | [ ] unchecked header | [x] checked header |
+| -------------------- | :------------------: | :----------------: |
+| checkbox             |       [ ] row        |      [x] row       |
 
 ### A ser implementado
 

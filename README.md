@@ -2,11 +2,13 @@
 
 ### Features
 
-|:white_check_mark: | Criar Card |
-|:white_check_mark: | Arrastar Card para coluna específica |
-|:white_check_mark: | Visualizar Card |
-|:white_check_mark: | Remover Card |
-|:white_check_mark: | Inserir label de prioridade no card |
+| Feito              | Feature                              |
+| ------------------ | ------------------------------------ |
+| :white_check_mark: | Criar Card                           |
+| :white_check_mark: | Arrastar Card para coluna específica |
+| :white_check_mark: | Visualizar Card                      |
+| :white_check_mark: | Remover Card                         |
+| :white_check_mark: | Inserir label de prioridade no card  |
 
 ### A ser implementado
 

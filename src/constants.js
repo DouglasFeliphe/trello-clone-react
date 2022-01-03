@@ -1,6 +1,6 @@
 export const COLUMN_NAMES = {
-  DO_IT: "Do it",
+  DO_IT: "To Do",
   IN_PROGRESS: "In Progress",
-  AWAITING_REVIEW: "Awaiting review",
+  AWAITING_REVIEW: "Reviewing",
   DONE: "Done",
 };

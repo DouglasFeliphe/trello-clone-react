@@ -1,12 +1,13 @@
 import { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
-import { COLUMN_NAMES } from "../constants";
-
+import { COLUMN_NAMES } from "../../constants";
+import "../../App.css";
+import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 /**
  * @param {{labelPriority: "baixa" | "media" | "alta"}} props
  * @returns
  */
-const MovableItem = ({
+const Card = ({
   name,
   labelPriority,
   index,
@@ -106,20 +107,27 @@ const MovableItem = ({
   drag(drop(ref));
 
   return (
-    <div ref={ref} className="movable-item" style={{ opacity }}>
+    <div ref={ref} className="card" style={{ opacity }}>
       <label
         className={
           labelPriority === "alta"
-            ? "movable-item-label --high-priority"
+            ? "card-label --high-priority"
             : labelPriority === "media"
-            ? "movable-item-label --medium-priority"
-            : labelPriority === "baixa" && "movable-item-label --low-priority"
+            ? "card-label --medium-priority"
+            : labelPriority === "baixa" && "card-label --low-priority"
         }
       ></label>
-      {/* <label className="movable-item-label --high-priority"></label> */}
+      <div></div>
       {name}
+      <div>
+        <i className="fa fa-paperclip"></i>
+        <i className="far fa-check-square"></i>
+        <i className="far fa-clock"></i>
+        <i className="far fa-comment"></i>
+        <i className="far fa-user"></i>
+      </div>
     </div>
   );
 };
 
-export default MovableItem;
+export default Card;

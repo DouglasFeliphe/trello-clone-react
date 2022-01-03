@@ -1,5 +1,6 @@
 import { useDrop } from "react-dnd";
-import { COLUMN_NAMES } from "../constants";
+import { COLUMN_NAMES } from "../../constants";
+import "../../App.css";
 
 const Column = ({ children, className, title }) => {
   const [{ isOver, canDrop }, drop] = useDrop({
@@ -28,9 +29,9 @@ const Column = ({ children, className, title }) => {
   const getBackgroundColor = () => {
     if (isOver) {
       if (canDrop) {
-        return "rgb(188,251,255)";
+        return "2px 2px 5px #ccc";
       } else if (!canDrop) {
-        return "rgb(255,188,188)";
+        return "2px 2px 5px tomato";
       }
     } else {
       return "";
@@ -40,11 +41,11 @@ const Column = ({ children, className, title }) => {
   return (
     <div
       ref={drop}
-      className={className}
-      style={{ backgroundColor: getBackgroundColor() }}
+      className={"column " + className}
+      style={{ boxShadow: getBackgroundColor() }}
     >
       <div>
-        <p className="movable-item-title">{title}</p>
+        <p className="column-title">{title}</p>
       </div>
       {children}
     </div>

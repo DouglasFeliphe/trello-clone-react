@@ -3,7 +3,7 @@ import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { TouchBackend } from "react-dnd-touch-backend";
 import Column from "./Components/Column";
-import MovableItem from "./Components/MovableItem";
+import MovableItem from "./Components/Card";
 import { COLUMN_NAMES } from "./constants";
 import { mock_tasks } from "./tasks";
 import "./App.css";
@@ -52,19 +52,16 @@ const App = () => {
     <>
       <div className="container">
         <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
-          <Column title={DO_IT} className="column do-it-column">
+          <Column title={DO_IT} className="do-it-column">
             {returnItemsForColumn(DO_IT)}
           </Column>
-          <Column title={IN_PROGRESS} className="column in-progress-column">
+          <Column title={IN_PROGRESS} className="in-progress-column">
             {returnItemsForColumn(IN_PROGRESS)}
           </Column>
-          <Column
-            title={AWAITING_REVIEW}
-            className="column awaiting-review-column"
-          >
+          <Column title={AWAITING_REVIEW} className="awaiting-review-column">
             {returnItemsForColumn(AWAITING_REVIEW)}
           </Column>
-          <Column title={DONE} className="column done-column">
+          <Column title={DONE} className="done-column">
             {returnItemsForColumn(DONE)}
           </Column>
         </DndProvider>

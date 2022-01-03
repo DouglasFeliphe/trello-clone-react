@@ -3,7 +3,7 @@
 ### Features
 
 - [ ] Criar Card
-- [ ] Arrastar Card para coluna específica
+- [v] Arrastar Card para coluna específica
 - [ ] Visualizar Card
 - [ ] Editar Card
 - [ ] Remover Card
@@ -11,12 +11,12 @@
 
 ### A ser implementado
 
-- [] adicionar ícone de descricão
-- [] adicionar ícone de usuario caso usuário esteja associado ao card
-- [] adicionar ícone de comentário com contagem comentários
-- [] adicionar ícone de anexo com contagem de arquivos anexados
-- [] adicionar ícone de check com contagem de checklists
-- [] adicionar ícone de data com informação do mês e dia
+- [ ] adicionar ícone de descricão
+- [ ] adicionar ícone de usuario caso usuário esteja associado ao card
+- [ ] adicionar ícone de comentário com contagem comentários
+- [ ] adicionar ícone de anexo com contagem de arquivos anexados
+- [ ] adicionar ícone de check com contagem de checklists
+- [ ] adicionar ícone de data com informação do mês e dia
   - os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card
 - [] visualizar card
 

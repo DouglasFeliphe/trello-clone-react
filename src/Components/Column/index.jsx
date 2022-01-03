@@ -44,9 +44,7 @@ const Column = ({ children, className, title }) => {
       className={"column " + className}
       style={{ boxShadow: getBackgroundColor() }}
     >
-      <div>
-        <p className="column-title">{title}</p>
-      </div>
+      <p className="column-title">{title}</p>
       {children}
     </div>
   );

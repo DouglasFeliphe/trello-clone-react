@@ -117,14 +117,25 @@ const Card = ({
             : labelPriority === "baixa" && "card-label --low-priority"
         }
       ></label>
-      <div></div>
       {name}
-      <div>
-        <i className="fa fa-paperclip"></i>
-        <i className="far fa-check-square"></i>
-        <i className="far fa-clock"></i>
-        <i className="far fa-comment"></i>
-        <i className="far fa-user"></i>
+      <div className="card-action-container">
+        <div className="card-action-item">
+          <i className="fa fa-paperclip" />
+        </div>
+        <div className="card-action-item">
+          <i className="far fa-check-square"></i>
+          <label htmlFor="">7/7</label>
+        </div>
+        <div className="card-action-item">
+          <i className="far fa-clock" />
+        </div>
+        <div className="card-action-item">
+          <i className="far fa-comment" />
+          <label>2</label>
+        </div>
+        <div className="card-action-item">
+          <i className="far fa-user" />
+        </div>
       </div>
     </div>
   );

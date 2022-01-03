@@ -2,19 +2,11 @@
 
 ### Features
 
-:ballot_box_with_check:Male
-
-<!-- | Feito? | Nome                                 |
-| :----: | ------------------------------------ |
-|  ⬜️   | Criar Card                           |
-|  ✅   | Arrastar Card para coluna específica |
-|  ⬜️   | Visualizar Card                      |
-|  ⬜️   | Remover Card                         |
-|  ⬜️   | Inserir label de prioridade no card  | -->
-
-| Checkbox Experiments | - [ ] unchecked header | - [x] checked header |
-| -------------------- | :--------------------: | :------------------: |
-| checkbox             |       - [ ] row        |      - [x] row       |
+:heavy_check_mark:Criar Card  
+:heavy_check_mark:Arrastar Card para coluna específica
+:white_check_mark:Visualizar Card  
+:heavy_check_mark:Remover Card  
+:heavy_check_mark:Inserir label de prioridade no card
 
 ### A ser implementado
 

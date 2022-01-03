@@ -4,7 +4,7 @@
 
 | Feito                | Feature                              |
 | -------------------- | ------------------------------------ |
-| :&#x2705:            | Criar Card                           |
+| &#x2705              | Criar Card                           |
 | :white_uncheck_mark: | Arrastar Card para coluna específica |
 | :white_check_mark:   | Visualizar Card                      |
 | :white_check_mark:   | Remover Card                         |

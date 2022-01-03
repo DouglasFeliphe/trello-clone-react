@@ -2,10 +2,12 @@
 
 ### Features
 
+:ballot_box_with_check:Male
+
 <!-- | Feito? | Nome                                 |
 | :----: | ------------------------------------ |
 |  ⬜️   | Criar Card                           |
-|   ✅   | Arrastar Card para coluna específica |
+|  ✅   | Arrastar Card para coluna específica |
 |  ⬜️   | Visualizar Card                      |
 |  ⬜️   | Remover Card                         |
 |  ⬜️   | Inserir label de prioridade no card  | -->

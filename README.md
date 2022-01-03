@@ -2,13 +2,17 @@
 
 ### Features
 
-| Feito                | Feature                              |
-| -------------------- | ------------------------------------ |
-| &#x2705              | Criar Card                           |
-| :white_uncheck_mark: | Arrastar Card para coluna específica |
-| :white_check_mark:   | Visualizar Card                      |
-| :white_check_mark:   | Remover Card                         |
-| :white_check_mark:   | Inserir label de prioridade no card  |
+<!-- | Unchecked | Checked |
+| --------- | ------- |
+| &#9744;   | &#9745; | -->
+
+| Feito   | Feature                              |
+| ------- | ------------------------------------ |
+| &#9744; | Criar Card                           |
+| &#9745; | Arrastar Card para coluna específica |
+| &#9744; | Visualizar Card                      |
+| &#9744; | Remover Card                         |
+| &#9744; | Inserir label de prioridade no card  |
 
 ### A ser implementado
 

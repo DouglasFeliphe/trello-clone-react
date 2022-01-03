@@ -6,13 +6,14 @@
 | --------- | ------- |
 | &#9744;   | &#9745; | -->
 
-| Feito   | Feature                              |
-| ------- | ------------------------------------ |
-| &#9744; | Criar Card                           |
-| &#9745; | Arrastar Card para coluna específica |
-| &#9744; | Visualizar Card                      |
-| &#9744; | Remover Card                         |
-| &#9744; | Inserir label de prioridade no card  |
+| Feito    | Feature                              |
+| -------- | ------------------------------------ |
+| &#9744;  | Criar Card                           |
+| &#x2705; | Visualizar lista de Cards            |
+| &#x2705; | Arrastar Card para coluna específica |
+| &#9744;  | Visualizar Card                      |
+| &#9744;  | Remover Card                         |
+| &#9744;  | Inserir label de prioridade no card  |
 
 ### A ser implementado
 

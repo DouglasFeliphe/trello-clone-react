@@ -2,13 +2,13 @@
 
 ### Features
 
-|     |                                      |
-| :-: | ------------------------------------ |
-| ⬜️ | Criar Card                           |
-| ✅  | Arrastar Card para coluna específica |
-| ⬜️ | Visualizar Card                      |
-| ⬜️ | Remover Card                         |
-| ⬜️ | Inserir label de prioridade no card  |
+<!-- | Feito? | Nome                                 |
+| :----: | ------------------------------------ |
+|  ⬜️   | Criar Card                           |
+|   ✅   | Arrastar Card para coluna específica |
+|  ⬜️   | Visualizar Card                      |
+|  ⬜️   | Remover Card                         |
+|  ⬜️   | Inserir label de prioridade no card  | -->
 
 | Checkbox Experiments | [ ] unchecked header | [x] checked header |
 | -------------------- | :------------------: | :----------------: |

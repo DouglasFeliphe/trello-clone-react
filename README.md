@@ -4,7 +4,7 @@
 
 | Feito                | Feature                              |
 | -------------------- | ------------------------------------ |
-| :white_check_mark:   | Criar Card                           |
+| :aegean_check_mark:  | Criar Card                           |
 | :white_uncheck_mark: | Arrastar Card para coluna específica |
 | :white_check_mark:   | Visualizar Card                      |
 | :white_check_mark:   | Remover Card                         |

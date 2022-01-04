@@ -4,10 +4,7 @@ import { COLUMN_NAMES } from "../../constants";
 import UserAvatar from "../../svg/avatar.svg";
 import "../../App.css";
 import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-import {
-  convertDateNowToMonthAndDay,
-  getDateNow,
-} from "../../utils/getDateNow";
+import { convertDateNowToMonthAndDay, getDateNow } from "../../utils/Date";
 /**
  * @param {{labelPriority: "baixa" | "media" | "alta"}} props
  * @returns

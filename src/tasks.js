@@ -6,9 +6,9 @@ export const mock_tasks = [
   {
     id: 1,
     name: "Create offer notification email",
-    priority: "alta",
-    column: DO_IT,
-    coments: [
+    deadline: "Mar 03",
+    files: [],
+    comments: [
       {
         id: 1,
         text: "lorem ipsum",
@@ -18,31 +18,6 @@ export const mock_tasks = [
         text: "lorem ipsum lorem ipsum",
       },
     ],
-    checklist: [
-      {
-        id: 1,
-        text: "lorem ipsum",
-        done: false,
-      },
-      {
-        id: 2,
-        text: "lorem ipsum lorem ipsum",
-        done: false,
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Create all internal URLs work in blog archive",
-    coments: [],
-    checklist: [],
-    priority: "baixa",
-    column: DO_IT,
-  },
-  {
-    id: 3,
-    name: "Launch Podcat",
-    coments: [],
     checklist: [
       {
         id: 1,
@@ -55,14 +30,49 @@ export const mock_tasks = [
         done: false,
       },
     ],
+    users: [],
+    priority: "alta",
+    column: DO_IT,
+  },
+  {
+    id: 2,
+    name: "Create all internal URLs work in blog archive",
+    deadline: "",
+    files: [],
+    comments: [],
+    checklist: [],
+    users: [],
+    priority: "baixa",
+    column: DO_IT,
+  },
+  {
+    id: 3,
+    name: "Launch Podcast",
+    deadline: "",
+    files: [],
+    comments: [],
+    checklist: [
+      {
+        id: 1,
+        text: "lorem ipsum",
+        done: true,
+      },
+      {
+        id: 2,
+        text: "lorem ipsum lorem ipsum",
+        done: false,
+      },
+    ],
+    users: [{ id: 1, name: "John Doe" }],
     priority: "baixa",
     column: DO_IT,
   },
   {
     id: 4,
     name: "Structure editorial calendar",
-    priority: "media",
-    coments: [
+    deadline: "Feb 20",
+    files: [],
+    comments: [
       {
         id: 1,
         text: "lorem ipsum",
@@ -81,6 +91,35 @@ export const mock_tasks = [
       },
     ],
     checklist: [],
+    users: [
+      { id: 1, name: "John Doe" },
+      { id: 2, name: "Jane Doe" },
+      { id: 3, name: "John Smith" },
+      { id: 4, name: "Jane Smith" },
+    ],
+    priority: "media",
+    column: DO_IT,
+  },
+  {
+    id: 5,
+    name: "Update social media content",
+    deadline: "",
+    files: [],
+    comments: [],
+    checklist: [
+      {
+        id: 1,
+        text: "lorem ipsum",
+        done: true,
+      },
+      {
+        id: 2,
+        text: "lorem ipsum lorem ipsum",
+        done: true,
+      },
+    ],
+    users: [],
+    priority: "media",
     column: DO_IT,
   },
 ];

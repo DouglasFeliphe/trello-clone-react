@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { COLUMN_NAMES } from "../../constants";
+import UserAvatar from "../../svg/avatar.svg";
 import "../../App.css";
 import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 /**
@@ -8,13 +9,27 @@ import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
  * @returns
  */
 const Card = ({
-  name,
-  labelPriority,
   index,
+  name,
+  deadline,
+  files,
+  comments,
+  checklist,
+  users,
+  labelPriority,
   currentColumnName,
   moveCardHandler,
   setItems,
 }) => {
+  const hasActions =
+    deadline !== "" ||
+    files.length > 0 ||
+    comments.length > 0 ||
+    checklist.length > 0 ||
+    users.length > 0;
+
+  const checkedQty = checklist.filter((check) => check.done).length;
+
   const changeItemColumn = (currentItem, columnName) => {
     setItems((prevState) => {
       return prevState.map((e) => {
@@ -116,27 +131,75 @@ const Card = ({
             ? "card-label --medium-priority"
             : labelPriority === "baixa" && "card-label --low-priority"
         }
-      ></label>
-      {name}
-      <div className="card-action-container">
-        <div className="card-action-item">
-          <i className="fa fa-paperclip" />
+      />
+
+      <span className="card-name">{name}</span>
+
+      {hasActions && (
+        <div className="card-action-container">
+          {deadline !== "" && (
+            <div className="card-action-item">
+              <i className="far fa-clock" />
+              {deadline}
+            </div>
+          )}
+          {files.length > 0 && (
+            <div className="card-action-item">
+              <i className="fa fa-paperclip" />
+            </div>
+          )}
+          {checklist.length > 0 && (
+            <div
+              className={
+                checkedQty === checklist.length
+                  ? "card-action-item --checklist-done"
+                  : "card-action-item "
+              }
+            >
+              <>
+                <i className="far fa-check-square test"></i>
+                <label htmlFor="">
+                  {" "}
+                  {checkedQty}/{checklist.length}
+                </label>
+              </>
+            </div>
+          )}
+          {comments.length > 0 && (
+            <div className="card-action-item">
+              <i className="far fa-comment" />
+              <label>{comments.length}</label>
+            </div>
+          )}
+          {users.length > 0 && (
+            <div className="card-action-item --users">
+              {users.length < 4 ? (
+                <>
+                  {users.map((user) => (
+                    <img
+                      src={UserAvatar}
+                      width={25}
+                      height={25}
+                      alt="User Avatar"
+                    />
+                  ))}
+                </>
+              ) : (
+                <>
+                  {users.map((user) => (
+                    <img
+                      src={UserAvatar}
+                      width={18}
+                      height={18}
+                      alt="User Avatar"
+                    />
+                  ))}
+                </>
+              )}
+            </div>
+          )}
         </div>
-        <div className="card-action-item">
-          <i className="far fa-check-square"></i>
-          <label htmlFor="">7/7</label>
-        </div>
-        <div className="card-action-item">
-          <i className="far fa-clock" />
-        </div>
-        <div className="card-action-item">
-          <i className="far fa-comment" />
-          <label>2</label>
-        </div>
-        <div className="card-action-item">
-          <i className="far fa-user" />
-        </div>
-      </div>
+      )}
     </div>
   );
 };

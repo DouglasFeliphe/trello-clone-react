@@ -37,6 +37,11 @@ const App = () => {
         <MovableItem
           key={item.id}
           name={item.name}
+          deadline={item.deadline}
+          files={item.files}
+          comments={item.comments}
+          checklist={item.checklist}
+          users={item.users}
           labelPriority={item.priority}
           currentColumnName={item.column}
           setItems={setItems}

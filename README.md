@@ -19,11 +19,11 @@
 
 - [ ] visualizar card
 - [ ] adicionar ícone de descricão
-- [ ] adicionar ícone de usuario caso usuário esteja associado ao card
-- [ ] adicionar ícone de comentário com contagem comentários
-- [ ] adicionar ícone de anexo com contagem de arquivos anexados
-- [ ] adicionar ícone de check com contagem de checklists
-- [ ] adicionar ícone de data com informação do mês e dia
+- [x] adicionar ícone de usuario caso usuário esteja associado ao card
+- [x] adicionar ícone de comentário com contagem comentários
+- [x] adicionar ícone de anexo com contagem de arquivos anexados
+- [x] adicionar ícone de check com contagem de checklists
+- [x] adicionar ícone de data com informação do mês e dia
   - os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card
 
 ### imagem

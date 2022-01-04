@@ -18,7 +18,7 @@
 ### A ser implementado
 
 - [ ] visualizar card
-- [ ] adicionar ícone de descricão
+- [x] adicionar ícone de descricão
 - [x] adicionar ícone de usuario caso usuário esteja associado ao card
 - [x] adicionar ícone de comentário com contagem comentários
 - [x] adicionar ícone de anexo com contagem de arquivos anexados

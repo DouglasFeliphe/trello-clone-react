@@ -37,6 +37,7 @@ const App = () => {
         <MovableItem
           key={item.id}
           name={item.name}
+          description={item.description}
           deadline={item.deadline}
           files={item.files}
           comments={item.comments}

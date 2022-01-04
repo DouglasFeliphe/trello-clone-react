@@ -6,6 +6,7 @@ export const mock_tasks = [
   {
     id: 1,
     name: "Create offer notification email",
+    description: "",
     deadline: "Mar 03",
     files: [],
     comments: [
@@ -37,6 +38,7 @@ export const mock_tasks = [
   {
     id: 2,
     name: "Create all internal URLs work in blog archive",
+    description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     deadline: "",
     files: [],
     comments: [],
@@ -48,6 +50,7 @@ export const mock_tasks = [
   {
     id: 3,
     name: "Launch Podcast",
+    description: "",
     deadline: "",
     files: [],
     comments: [],
@@ -70,6 +73,7 @@ export const mock_tasks = [
   {
     id: 4,
     name: "Structure editorial calendar",
+    description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     deadline: "Feb 20",
     files: [],
     comments: [
@@ -103,6 +107,7 @@ export const mock_tasks = [
   {
     id: 5,
     name: "Update social media content",
+    description: "",
     deadline: "",
     files: [],
     comments: [],

@@ -11,6 +11,7 @@ import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 const Card = ({
   index,
   name,
+  description,
   deadline,
   files,
   comments,
@@ -22,6 +23,7 @@ const Card = ({
   setItems,
 }) => {
   const hasActions =
+    description !== "" ||
     deadline !== "" ||
     files.length > 0 ||
     comments.length > 0 ||
@@ -137,12 +139,19 @@ const Card = ({
 
       {hasActions && (
         <div className="card-action-container">
+          {description !== "" && (
+            <div className="card-action-item">
+              <i className="fas fa-align-left" />
+            </div>
+          )}
+
           {deadline !== "" && (
             <div className="card-action-item">
               <i className="far fa-clock" />
               {deadline}
             </div>
           )}
+
           {files.length > 0 && (
             <div className="card-action-item">
               <i className="fa fa-paperclip" />

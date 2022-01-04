@@ -6,6 +6,7 @@ import Column from "./Components/Column";
 import MovableItem from "./Components/Card";
 import { COLUMN_NAMES } from "./constants";
 import { mock_tasks } from "./tasks";
+
 import "./App.css";
 
 const App = () => {

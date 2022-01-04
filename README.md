@@ -18,12 +18,12 @@
 ### A ser implementado
 
 - [ ] visualizar card
-- [x] adicionar ícone de descricão
-- [x] adicionar ícone de usuario caso usuário esteja associado ao card
-- [x] adicionar ícone de comentário com contagem comentários
-- [x] adicionar ícone de anexo com contagem de arquivos anexados
-- [x] adicionar ícone de check com contagem de checklists
-- [x] adicionar ícone de data com informação do mês e dia
+- [ ] implementar lógica para a data de entrega
+
+  - [x] caso estiver próxima, deixar o elemento amarelo
+  - [ ] caso estiver passado, deixar o elemento vemelho
+  - [ ] caso estiver sido entrege (esta na coluna "entrege"), deixar o elemento verde
+
   - os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card
 
 ### imagem

@@ -44,16 +44,12 @@ p {
 .card {
   border-radius: 3px;
   background-color: #fff;
-  /* height: 8%; */
-  /* height: 10%; */
-  /* height: fit-content; */
   margin-bottom: 4px;
   padding: 12px 6px 12px 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 1px 1px 1px #ccc;
-  /* border: 1px solid #f3f3f3; */
 }
 
 .card-label {
@@ -84,22 +80,44 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 22px;
-  padding: 5px;
-  margin-top: 11px;
+  flex-wrap: wrap;
+
+  gap: 22px 11px;
+  margin-top: 22px;
+  /* padding: 5px; */
+  /* border: 1px solid #000; */
 }
 
 .card-action-item {
   height: 25px;
+  /* width: 100%; */
+  /* border: 1px solid #000; */
+}
+
+.card-action-item.--overdue {
+  background-color: #ff9e1b;
+}
+.card-action-item.--today {
+  background-color: #f1d600;
+}
+.card-action-item.--completed {
+  background-color: #63be53;
+}
+
+.--overdue,
+.--today,
+.--tomorrow,
+.--checklist-done {
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 3px;
 }
 
 .card-action-item.--checklist-done {
   background-color: #63be53;
-  color: #fff;
-  padding: 0 5px;
 }
 
 .card-action-item.--users {
   display: flex;
-  gap: 2px;
+  gap: 5px;
 }

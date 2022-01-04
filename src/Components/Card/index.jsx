@@ -4,6 +4,10 @@ import { COLUMN_NAMES } from "../../constants";
 import UserAvatar from "../../svg/avatar.svg";
 import "../../App.css";
 import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+import {
+  convertDateNowToMonthAndDay,
+  getDateNow,
+} from "../../utils/getDateNow";
 /**
  * @param {{labelPriority: "baixa" | "media" | "alta"}} props
  * @returns
@@ -29,6 +33,9 @@ const Card = ({
     comments.length > 0 ||
     checklist.length > 0 ||
     users.length > 0;
+
+  // get date now
+  const dateNow = getDateNow();
 
   const checkedQty = checklist.filter((check) => check.done).length;
 
@@ -146,9 +153,16 @@ const Card = ({
           )}
 
           {deadline !== "" && (
-            <div className="card-action-item">
+            <div
+              className={
+                deadline === dateNow
+                  ? "card-action-item --today"
+                  : "card-action-item"
+              }
+            >
               <i className="far fa-clock" />
-              {deadline}
+
+              {convertDateNowToMonthAndDay(deadline)}
             </div>
           )}
 
@@ -182,29 +196,16 @@ const Card = ({
           )}
           {users.length > 0 && (
             <div className="card-action-item --users">
-              {users.length < 4 ? (
-                <>
-                  {users.map((user) => (
-                    <img
-                      src={UserAvatar}
-                      width={25}
-                      height={25}
-                      alt="User Avatar"
-                    />
-                  ))}
-                </>
-              ) : (
-                <>
-                  {users.map((user) => (
-                    <img
-                      src={UserAvatar}
-                      width={18}
-                      height={18}
-                      alt="User Avatar"
-                    />
-                  ))}
-                </>
-              )}
+              <>
+                {users.map((user) => (
+                  <img
+                    src={UserAvatar}
+                    width={25}
+                    height={25}
+                    alt="User Avatar"
+                  />
+                ))}
+              </>
             </div>
           )}
         </div>

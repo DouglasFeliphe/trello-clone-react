@@ -21,7 +21,7 @@
 - [ ] implementar lógica para a data de entrega
 
   - [x] caso estiver próxima, deixar o elemento amarelo
-  - [ ] caso estiver passado, deixar o elemento vemelho
+  - [x] caso estiver passado, deixar o elemento vemelho
   - [ ] caso estiver sido entrege (esta na coluna "entrege"), deixar o elemento verde
 
   - os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card

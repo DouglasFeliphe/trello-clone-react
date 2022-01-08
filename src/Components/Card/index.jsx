@@ -4,7 +4,11 @@ import { COLUMN_NAMES } from "../../constants";
 import UserAvatar from "../../svg/avatar.svg";
 import "../../App.css";
 import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-import { convertDateNowToMonthAndDay, getDateNow } from "../../utils/Date";
+import {
+  convertDateNowToMonthAndDay,
+  getDateNow,
+  getDateTomorrow,
+} from "../../utils/Date";
 /**
  * @param {{labelPriority: "baixa" | "media" | "alta"}} props
  * @returns
@@ -33,7 +37,9 @@ const Card = ({
 
   // get date now
   const dateNow = getDateNow();
-  console.log("dateNow", dateNow);
+  const dateTomorrow = getDateTomorrow();
+  // console.log("dateNow", dateNow);
+  // console.log("date tomorrow", dateTomorrow);
 
   const checkedQty = checklist.filter((check) => check.done).length;
 
@@ -155,11 +161,12 @@ const Card = ({
               className={
                 deadline === dateNow
                   ? "card-action-item --today"
+                  : deadline === dateTomorrow
+                  ? "card-action-item --overdue"
                   : "card-action-item"
               }
             >
-              <i className="far fa-clock" />
-
+              <i className="far fa-clock" />{" "}
               {convertDateNowToMonthAndDay(deadline)}
             </div>
           )}

@@ -1,30 +1,19 @@
-let cont = 0;
+//get Date by locale
+
 export const getDateNow = () => {
   const date = new Date();
-  const day = date.getDate();
-  const month = date.getMonth() + 1;
-  const year = date.getFullYear();
-  return `${day}/${month}/${year}`;
+  return new Intl.DateTimeFormat("pt-BR").format(date);
 };
 
 // convert date now locale to month and day, e.g. "12/12" equals December 12th
 export const convertDateNowToMonthAndDay = (dateNow) => {
-  const date = new Date(dateNow);
-  const day = date.getDate();
-  const months = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Agosto",
-    "Setembro",
-    "Outubro",
-    "Novembro",
-    "Dezembro",
-  ];
-  const month = date.getMonth() + 1;
-  return `${months[month - 1]} ${day}`;
+  var date = new Date(dateNow);
+
+  // request a weekday along with a long date
+  const options = {
+    month: "long",
+    day: "numeric",
+  };
+
+  return new Intl.DateTimeFormat("pt-BR", options).format(date);
 };

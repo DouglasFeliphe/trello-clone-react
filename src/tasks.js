@@ -7,7 +7,7 @@ export const mock_tasks = [
     id: 1,
     name: "Create offer notification email",
     description: "",
-    deadline: "4/1/2022",
+    deadline: "08/01/2022",
     files: [],
     comments: [
       {
@@ -74,7 +74,7 @@ export const mock_tasks = [
     id: 4,
     name: "Structure editorial calendar",
     description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    deadline: "01/02/2022",
+    deadline: "09/01/2022",
     files: [],
     comments: [
       {

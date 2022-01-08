@@ -33,6 +33,7 @@ const Card = ({
 
   // get date now
   const dateNow = getDateNow();
+  console.log("dateNow", dateNow);
 
   const checkedQty = checklist.filter((check) => check.done).length;
 

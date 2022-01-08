@@ -44,12 +44,12 @@ p {
 .card {
   border-radius: 3px;
   background-color: #fff;
-  margin-bottom: 4px;
+  margin-bottom: 16px;
   padding: 12px 6px 12px 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 1px 1px 1px #ccc;
+  box-shadow: 2px 2px 3px #ccc;
 }
 
 .card-label {

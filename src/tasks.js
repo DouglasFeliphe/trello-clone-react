@@ -1,6 +1,6 @@
 import { COLUMN_NAMES } from "./constants";
 
-const { DO_IT } = COLUMN_NAMES;
+const { DO_IT, AWAITING_REVIEW, IN_PROGRESS, DONE } = COLUMN_NAMES;
 
 export const mock_tasks = [
   {
@@ -45,7 +45,7 @@ export const mock_tasks = [
     checklist: [],
     users: [],
     priority: "baixa",
-    column: DO_IT,
+    column: AWAITING_REVIEW,
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ export const mock_tasks = [
     ],
     users: [{ id: 1, name: "John Doe" }],
     priority: "baixa",
-    column: DO_IT,
+    column: AWAITING_REVIEW,
   },
   {
     id: 4,
@@ -125,7 +125,7 @@ export const mock_tasks = [
     ],
     users: [],
     priority: "media",
-    column: DO_IT,
+    column: IN_PROGRESS,
   },
   {
     id: 6,
@@ -137,6 +137,6 @@ export const mock_tasks = [
     checklist: [],
     users: [],
     priority: "baixa",
-    column: DO_IT,
+    column: DONE,
   },
 ];

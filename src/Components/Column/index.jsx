@@ -2,7 +2,7 @@ import { useDrop } from "react-dnd";
 import { COLUMN_NAMES } from "../../constants";
 import "../../App.css";
 
-const Column = ({ children, className, title }) => {
+const Column = ({ children, className, title, onClickButton }) => {
   const [{ isOver, canDrop }, drop] = useDrop({
     accept: "Our first type",
     drop: () => ({ name: title }),
@@ -46,12 +46,6 @@ const Column = ({ children, className, title }) => {
     >
       <p className="column-title">{title}</p>
       {children}
-      {/* <button className="btn">+</button> */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <button className="btn">
-          <i className="fa fa-plus" style={{ color: "white" }}></i>
-        </button>
-      </div>
     </div>
   );
 };

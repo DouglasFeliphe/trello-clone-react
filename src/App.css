@@ -8,17 +8,22 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   background: #f4f4f4;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+  /* border: 1px solid #000; */
 }
 
 .column {
   width: 300px;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   margin: 10px;
-  padding: 0px 8px;
+  padding: 0px 16px;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 3px #ccc;
+  /* border: 1px solid #000; */
 }
 
 .column-title {
@@ -50,6 +55,9 @@ p {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 2px 2px 3px #ccc;
+}
+.card:hover {
+  border: 1px solid #000;
 }
 
 .card-label {
@@ -125,9 +133,11 @@ p {
 
 button.btn {
   background-color: dodgerblue;
+  margin: 22px 0;
   height: 33px;
   width: 33px;
   border-radius: 33px;
+  box-shadow: 1px 1px 3px #c2c2c2;
   border: none;
 }
 

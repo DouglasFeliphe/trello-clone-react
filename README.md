@@ -18,15 +18,15 @@
 ### A ser implementado
 
 - [ ] visualizar card
-- [ ] Mostrar ícone "6 pontos" ao passar o mouse sobre o card
-- [x] Inserir botão "criar card"(+) ao fim da coluna "to do"
+- [] Mostrar ícone "6 pontos" ao passar o mouse sobre o card
+- [x] Inserir botão "criar card"(+) ao início da coluna "to do"
 - [ ] implementar lógica para a data de entrega
 
   - [x] caso estiver próxima, deixar o elemento amarelo
   - [x] caso estiver passado, deixar o elemento vemelho
   - [ ] caso estiver sido entrege (esta na coluna "entrege"), deixar o elemento verde
 
-  - os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card
+- os ícones devem aparecer conforme as inserções de descrição, comentários, anexos, etc no card
 
 ### imagem
 

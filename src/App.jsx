@@ -6,6 +6,7 @@ import Column from "./Components/Column";
 import Card from "./Components/Card";
 import { COLUMN_NAMES } from "./constants";
 import { mock_tasks } from "./tasks";
+import ButtonIcon from "./Components/ButtonIcon";
 
 import "./App.css";
 
@@ -54,6 +55,30 @@ const App = () => {
       ));
   };
 
+  function handleCreateNewCard() {
+    // to do - create a task(Card) in 'to do' column on click button
+    // the card will have a title and a priority label
+    let cont = 10;
+    const task_name = window.prompt("Informe o título do card: ");
+
+    const new_task = {
+      id: "11",
+      name: "Test Task",
+      description: "",
+      deadline: "",
+      files: [],
+      comments: [],
+      checklist: [],
+      users: [],
+      priority: "baixa",
+      column: COLUMN_NAMES.DO_IT,
+    };
+
+    setItems([...items, new_task]);
+
+    alert("Card created successfully.");
+  }
+
   const { DO_IT, IN_PROGRESS, AWAITING_REVIEW, DONE } = COLUMN_NAMES;
 
   return (
@@ -61,6 +86,7 @@ const App = () => {
       <div className="container">
         <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
           <Column title={DO_IT} className="do-it-column">
+            <ButtonIcon onClick={handleCreateNewCard} />
             {returnItemsForColumn(DO_IT)}
           </Column>
           <Column title={IN_PROGRESS} className="in-progress-column">

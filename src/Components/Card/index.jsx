@@ -168,8 +168,9 @@ const Card = ({
                   ? "card-action-item --today"
                   : deadline === dateTomorrow
                   ? "card-action-item --overdue"
-                  : done && "card-action-item --completed"
-                // : "card-action-item"
+                  : done
+                  ? "card-action-item --completed"
+                  : "card-action-item"
               }
             >
               <i className="far fa-clock" />{" "}

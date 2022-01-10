@@ -127,4 +127,16 @@ export const mock_tasks = [
     priority: "media",
     column: DO_IT,
   },
+  {
+    id: 6,
+    name: "Test new features",
+    description: "",
+    deadline: "08/01/2022",
+    files: [],
+    comments: [],
+    checklist: [],
+    users: [],
+    priority: "baixa",
+    column: DO_IT,
+  },
 ];

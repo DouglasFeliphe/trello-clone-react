@@ -3,7 +3,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { TouchBackend } from "react-dnd-touch-backend";
 import Column from "./Components/Column";
-import MovableItem from "./Components/Card";
+import Card from "./Components/Card";
 import { COLUMN_NAMES } from "./constants";
 import { mock_tasks } from "./tasks";
 
@@ -35,7 +35,7 @@ const App = () => {
     return items
       .filter((item) => item.column === columnName)
       .map((item, index) => (
-        <MovableItem
+        <Card
           key={item.id}
           name={item.name}
           description={item.description}
@@ -49,6 +49,7 @@ const App = () => {
           setItems={setItems}
           index={index}
           moveCardHandler={moveCardHandler}
+          done={item.column === "Done"}
         />
       ));
   };

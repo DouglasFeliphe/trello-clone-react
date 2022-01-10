@@ -46,6 +46,12 @@ const Column = ({ children, className, title }) => {
     >
       <p className="column-title">{title}</p>
       {children}
+      {/* <button className="btn">+</button> */}
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <button className="btn">
+          <i className="fa fa-plus" style={{ color: "white" }}></i>
+        </button>
+      </div>
     </div>
   );
 };

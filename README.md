@@ -18,6 +18,8 @@
 ### A ser implementado
 
 - [ ] visualizar card
+- [ ] Mostrar ícone "6 pontos" ao passar o mouse sobre o card
+- [x] Inserir botão "criar card"(+) ao fim da coluna "to do"
 - [ ] implementar lógica para a data de entrega
 
   - [x] caso estiver próxima, deixar o elemento amarelo

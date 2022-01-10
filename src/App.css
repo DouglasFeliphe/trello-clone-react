@@ -94,19 +94,20 @@ p {
   /* border: 1px solid #000; */
 }
 
-.card-action-item.--overdue {
-  background-color: #ff5e00;
-}
 .card-action-item.--today {
   background-color: #f1d600;
+}
+.card-action-item.--overdue {
+  background-color: #ff9100;
 }
 .card-action-item.--completed {
   background-color: #63be53;
 }
 
-.--overdue,
 .--today,
 .--tomorrow,
+.--overdue,
+.--completed,
 .--checklist-done {
   color: #fff;
   padding: 0 5px;
@@ -120,4 +121,20 @@ p {
 .card-action-item.--users {
   display: flex;
   gap: 5px;
+}
+
+button.btn {
+  background-color: dodgerblue;
+  height: 33px;
+  width: 33px;
+  border-radius: 33px;
+  border: none;
+}
+
+button.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.6;
 }

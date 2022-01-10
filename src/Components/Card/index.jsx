@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { COLUMN_NAMES } from "../../constants";
 import UserAvatar from "../../svg/avatar.svg";
@@ -14,7 +14,6 @@ import {
  * @returns
  */
 const Card = ({
-  index,
   name,
   description,
   deadline,
@@ -24,8 +23,10 @@ const Card = ({
   users,
   labelPriority,
   currentColumnName,
-  moveCardHandler,
   setItems,
+  index,
+  moveCardHandler,
+  done,
 }) => {
   const hasActions =
     description !== "" ||
@@ -34,6 +35,10 @@ const Card = ({
     comments.length > 0 ||
     checklist.length > 0 ||
     users.length > 0;
+
+  useEffect(() => {
+    console.log("coluna mudou");
+  }, [done]);
 
   // get date now
   const dateNow = getDateNow();
@@ -163,7 +168,8 @@ const Card = ({
                   ? "card-action-item --today"
                   : deadline === dateTomorrow
                   ? "card-action-item --overdue"
-                  : "card-action-item"
+                  : done && "card-action-item --completed"
+                // : "card-action-item"
               }
             >
               <i className="far fa-clock" />{" "}
@@ -176,6 +182,7 @@ const Card = ({
               <i className="fa fa-paperclip" />
             </div>
           )}
+
           {checklist.length > 0 && (
             <div
               className={
@@ -193,12 +200,14 @@ const Card = ({
               </>
             </div>
           )}
+
           {comments.length > 0 && (
             <div className="card-action-item">
               <i className="far fa-comment" />
               <label>{comments.length}</label>
             </div>
           )}
+
           {users.length > 0 && (
             <div className="card-action-item --users">
               <>
